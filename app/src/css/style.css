@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
+body,
+input,
+button {
+  font-family: "Roboto", sans-serif;
+}
 header {
   width: 100%;
   height: 80px;
@@ -7,9 +12,51 @@ header {
   top: 0;
   left: 0;
   z-index: 5;
-  background-color: #93d1e8;
-
-  /**For Rounded Corners **/
+  padding: 15px;
+  background-color: #57bfb3;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  font-size: 15px;
+  font-weight: 400;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+}
+
+header input {
+  width: 100%;
+  height: 50px;
+  float: left;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+
+  border-radius: 5px;
+  border: 0px;
+  box-shadow: none;
+  outline: none;
+  text-indent: 18px;
+  --webkit-appearance: none;
+  --moz-appearance: none;
+  --ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+}
+
+header-input::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.75);
+}
+header button {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 2;
+  border-radius: 25px;
+  background: #fff;
+  font-size: 20px;
+  border: 0px;
+  box-shadow: none;
+  outline: none;
 }
