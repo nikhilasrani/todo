@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+header {
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  background-color: #93d1e8;
+
+  /**For Rounded Corners **/
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
