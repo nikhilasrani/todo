@@ -11,6 +11,11 @@ document.getElementById("add").addEventListener("click", function() {
   }
 });
 
+function removeItem() {
+  var item = this.parentNode.parentNode;
+  var parent = item.parentNode;
+  parent.removeChild(item);
+}
 function addItemToDo(text) {
   var list = document.getElementById("todo");
   var item = document.createElement("li");
@@ -24,6 +29,7 @@ function addItemToDo(text) {
   remove.innerHTML = removeIcon;
 
   //Add Click Event for removing item
+  remove.addEventListener("click", removeItem);
 
   var complete = document.createElement("button");
   remove.classList.add("complete");
