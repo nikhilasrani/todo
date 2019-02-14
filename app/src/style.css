@@ -121,3 +121,7 @@ ul.todo li .buttons button:last-of-type:before {
   left: 0px;
   background: #edf0f1;
 }
+
+ul.todo#completed {
+  opacity: 0.5;
+}
